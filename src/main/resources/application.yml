@@ -7,3 +7,9 @@ spring:
     hibernate:
       ddl-auto: validate
     open-in-view: false
+
+app:
+  sqs:
+    endpoint: http://localhost:9324   # local ElasticMQ; leave empty on real AWS
+    region: us-east-1
+    queue-name: usage-events
